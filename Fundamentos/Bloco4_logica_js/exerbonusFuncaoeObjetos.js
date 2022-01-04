@@ -25,4 +25,4 @@ function retornaNumero (numeroRomano) {
 
 }
 
-console.log(retornaNumero("VII"))
+console.log(retornaNumero("CM"))

@@ -116,4 +116,7 @@ for (let i = 1; i < numbers.length; i += 1) {
       }
     }
 }
-console.log(numbers)
+console.log(numbers);
+
+
+
