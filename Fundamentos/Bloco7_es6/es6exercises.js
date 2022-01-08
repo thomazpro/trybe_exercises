@@ -21,3 +21,20 @@ console.log(ordenaArray());
 
 const fatorial = numero => (numero === 0) ? 1 : numero * fatorial(numero-1);
 console.log(fatorial(4));
+
+
+const maiorPalavra = (frase) => {
+  return frase.split(' ').reduce((acc, next) => {
+    if (acc.length < next.length) {
+      acc = next;
+    }
+    return acc;
+  })
+}
+
+console.log(maiorPalavra('olha aqui e ve se vc acha a thhhhheeee bigest palavra man'));
+
+
+const replacee = (torelace, newe) => torelace.replace('x', newe);
+
+console.log(replacee("Tryber x aqui!", 'bebeto'));
