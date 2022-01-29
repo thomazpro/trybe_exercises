@@ -11,20 +11,31 @@ class Animal {
 }
 
 
-const animal = new Animal('beras', 'pro')
-const hugo = new Animal('hubert', 'patrao')
 
+
+
+const animal = new Animal('novo', 'animal');
+console.log(typeof animal);
 animal.comer()
-hugo.comer()
+
 
 class Pato extends Animal {
     nadar() {
-        console.log('pato nadando');
+        this.comer();
     }
 }
 
 const pato = new Pato('jesus', 'willbert')
 
 pato.nadar()
-
 pato.comer()
+
+const obj = {
+    name: 'magobessa',
+    printName() {
+        console.log(this.name);
+    },
+}
+
+
+obj.printErr()

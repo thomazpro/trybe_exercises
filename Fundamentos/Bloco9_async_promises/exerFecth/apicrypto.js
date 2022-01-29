@@ -34,12 +34,11 @@ const convert = async (moeda, valor) => {
     return valor * dol;
 }
 
-const imprimeDolar = async (cod, valor) => {
+const imprimeDolar = async  (cod, valor) => {
     const moedas = await fetchCrypto();
     const mueda = moedas.find(({ id }) => id === cod);
-    const convertiddo = await convert(mueda, valor);
+    const convertiddo = convert(mueda, valor);
     return convertiddo;
 }
 
 imprimeDolar('ethereum', 10);
-

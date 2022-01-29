@@ -100,16 +100,16 @@ const sendMarsTemperature = async (temp, falha) => {
   }, messageDelay())
 }
 
-it('uppercase "test" to equal "TEST"', (done) => {
-  uppercase('test', (str) => {
-    try {
-      expect(str).toBe('TEST');
-      done();
-    } catch (error) {
-      done(error);
-    }
-  });
-});
+//it('uppercase "test" to equal "TEST"', (done) => {
+//  uppercase('test', (str) => {
+//    try {
+//      expect(str).toBe('TEST');
+//      done();
+//    } catch (error) {
+//      done(error);
+//    }
+//  });
+//});
 
 
 sendMarsTemperature(temperatureInFahrenheit, handleError); // imprime "It is currently 47ºF at Mars", por exemplo

@@ -118,5 +118,5 @@ const gameActions = {
 
 console.log(gameActions.turn())
 console.log(gameActions.turn())
-console.log(gameActions.turn())
-console.log(gameActions.turn())
+console.log(gameActions.turn());
+console.log(gameActions.turn());

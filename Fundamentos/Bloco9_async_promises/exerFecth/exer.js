@@ -9,7 +9,7 @@ const fetchJoke = () => {
   };
 
   fetch(API_URL, myObject)
-    .then(response => response.json())
+    .then(response => response.json)
     .then(data => console.log(data));
     
 };
